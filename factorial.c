@@ -1,15 +1,19 @@
 #include <stdio.h>
 
-void fibonacci(int n);
+void factorial(int n);
 
 int main() {
     int n;
     printf("Enter the number of terms: ");
     scanf("%d", &n);
-    fibonacci(n);
+    factorial(n);
 
     return 0;
 }
-void fibonacci(int n){
-    
+void factorial(int n){
+    int fact = 1;
+    for (int i = 1; i <= n; ++i) {
+        fact *= i;
+    }
+    printf("The factorial of %d is %d\n", n, fact);
 }
