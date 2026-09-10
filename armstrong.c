@@ -6,6 +6,7 @@ int main(){
     scanf("%d",&n);
 
     temp=n;
+    
     while(n!=0){
         rem=temp%10;
         ans=ans+rem*rem*rem;
